@@ -18,15 +18,17 @@ const PostCreate = ()=>{
 
 
     return <div>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="form-group">
             <div className="">
                 <label>Title</label>
                 <input 
                     value={title}
                     onChange={e=>setTitle(e.target.value)}
+                    className="form-control"
                 />
             </div>
-            <button className="">Submit</button>
+            <br/>
+            <button className="btn btn-primary" >Submit</button>
         </form>
     </div>
 }
