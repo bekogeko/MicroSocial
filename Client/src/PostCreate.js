@@ -18,12 +18,12 @@ const PostCreate = ()=>{
 
 
     return <div>
-        <form OnSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
             <div className="">
                 <label>Title</label>
                 <input 
                     value={title}
-                    OnChange={e=>setTitle(e.target.value)}
+                    onChange={e=>setTitle(e.target.value)}
                 />
             </div>
             <button className="">Submit</button>
